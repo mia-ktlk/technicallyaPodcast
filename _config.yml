@@ -1,17 +1,17 @@
 # change the followings to match your Github username and repo name
-baseurl: "/tailpages" # the name of your github repo
-url: "https://harrywang.github.io" # the url of your github pages
+baseurl: "/technicallyaPodcast" # the name of your github repo
+url: "https://mia-ktlk.github.io" # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "Tailpages: Tailwind + Github Pages"
-description: A Github Pages (Jekyll) template based on TailwindCSS
+title: "Technically a Podcast hosted by Mia Kotalik"
+description: Tech and Business Podcasts by Mia
 
 # color theme for links
-theme-color: indigo # indigo|yellow|pink|green|stone|
+theme-color: green # indigo|yellow|pink|green|stone|
 
 # homepage information
-author: Satoshi Nakamoto
-author-bio: Creator of Bitcoin  # change to false to hide
+author: Mia Kotalik
+author-bio: Podcast Host # change to false to hide
 author-image: 279.png  # file must be in the /assets/img/ folder
 
 # navigation menu
@@ -26,21 +26,21 @@ nav-menu:
   permalink: blog
 
 # use false to turn off any social media links
-twitter: https://twitter.com/
+twitter: false
 facebook: https://facebook.com/
-instagram: https://instagram.com/
-github: https://github.com/
-linkedin: https://linkedin.com/
-medium: false
+instagram: https://www.instagram.com/helloitsmia.tech/
+github: false
+linkedin: https://www.linkedin.com/in/miakotalik/
+medium: https://helloitsmia.medium.com/
 google-scholar: false
 email: false
 
 # footer information
-footer-msg: "Powered by Tailpages"
-footer-msg-link: https://github.com/harrywang/tailpages
+footer-msg: "Made with ♥ by Mia"
+footer-msg-link: https://miakotalik.com/
 
 # google analytics
-google-analytics: G-WCRC1TC2V5
+google-analytics: false
 
 # jekyll plugins - no need to change
 plugins:
