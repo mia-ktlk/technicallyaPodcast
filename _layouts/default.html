@@ -11,14 +11,46 @@
   <!-- Jekyll SEO plugin -->
   {% seo %}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    name="viewport"
+  />
+
+
+  <meta property="og:locale" content="en_US" />
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:site_name" content="Podcast" />
+
+  
   <title>{{ site.title }}</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://podcast.redpixelthemes.com/assets/img/favicon.png"
+  />
 
   <!-- TailwindCSS and Inter Font-->
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+  <!-- Theme Style Sheets-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+  />
+
+  <link rel="stylesheet" href="/assets/css/main.min.css" />
 
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -42,7 +74,7 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
  </head>
 
-<body class="font-sans mx-auto max-w-prose">
+ <body x-data="{ mobileMenu: false }" :class="{'relative overflow-hidden max-h-screen': mobileMenu }">
   <div class="pt-12 pb-4">
     {{ content }}
   </div>

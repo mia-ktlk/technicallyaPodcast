@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>
+      Blog | Podcast
+    </title>
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
+
+    <meta
+      property="og:title"
+      content="Blog | Podcast"
+    />
+
+    <meta property="og:locale" content="en_US" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="Podcast" />
+
+    <meta
+      property="og:image"
+      content="https://podcast.redpixelthemes.com/assets/img/social.jpg"
+    />
+
+    <link rel="canonical" href="https://podcast.redpixelthemes.com/blog/" />
+
+    <meta property="og:url" content="https://podcast.redpixelthemes.com/blog/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:site" content="@redpixelthemes" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://podcast.redpixelthemes.com/assets/img/favicon.png"
+    />
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/styles/main.min.css" />
+  </head>
+
+  <body x-data="{ mobileMenu: false }" :class="{'relative overflow-hidden max-h-screen': mobileMenu }">
+    <main>
+      <div>
+  <!--Mobile menu-->
+  <div x-cloak x-show="mobileMenu">
+    <div class="absolute inset-0 z-50 bg-black/75"></div>
+    <div class="fixed right-0 z-50 h-screen w-64 bg-slate-500 xl:hidden">
+      <button
+        class="absolute top-0 right-0 mt-4 mr-4"
+        @click="mobileMenu = false"
+      >
+        <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+      </button>
+      <ul class="absolute top-20 py-10 text-left">
+        <li class="py-3">
+          <a
+            href="/"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Home</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/episodes"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Podcast Episodes</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/episode"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Podcast Episode</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/blog"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Blog</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/post"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Blog Post</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/single"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Single Page</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"
+  >
+    <div class="container relative z-40 flex items-center justify-between py-7">
+      <div class="flex items-center justify-between">
+        <a href="/" class="w-40">
+          <img src="/assets/img/logo-podcast.svg" alt="logo" />
+        </a>
+
+        <!--Menu -->
+        <ul class="ml-12 hidden xl:flex">
+          <li>
+            <a
+              href="/"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/episodes"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Podcast Episodes</a
+            >
+          </li>
+          <li>
+            <a
+              href="/episode"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Podcast Episode</a
+            >
+          </li>
+          <li>
+            <a
+              href="/blog"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="/post"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Blog Post</a
+            >
+          </li>
+          <li>
+            <a
+              href="/single"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Single Page</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="hidden items-center xl:flex">
+        <div class="mr-10 hidden 2xl:flex">
+          <a href="/">
+            <i
+              class="bx bxl-spotify text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-soundcloud pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-instagram pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-youtube pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+        </div>
+        <form class="relative flex items-center">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search"
+            class="rounded-full border-2 border-white bg-transparent px-4 py-2 font-body text-sm text-white placeholder-white focus:border-primary focus:ring-primary"
+          />
+          <button
+            class="absolute right-2 top-1/2 -translate-y-1/2 focus:outline-none"
+          >
+            <i class="bx bx-search-alt-2 text-xl text-white"></i>
+          </button>
+        </form>
+      </div>
+
+      <!--Mobile menu button-->
+      <div class="absolute right-0 md:right-2 xl:hidden">
+        <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+          <i class="bx bx-menu-alt-right text-4xl text-white"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="relative">
+    <div class="mix-blend-normal absolute inset-0 bg-right md:bg-center bg-cover bg-no-repeat w-full object-cover bg-black " style="background-image:url(/assets/img/bg-blog.png)"></div>
+    <div class="relative z-20 pt-40 md:pt-48 pb-32 md:pb-40 border-b-4 border-primary">
+        <h1 class="uppercase text-white font-header text-3xl md:text-4xl text-center">Blog</h1>
+    </div>
+</div>
+
+<div class="container py-20 md:py-24">
+    <div class="flex flex-col xl:flex-row justify-between">
+        <div class="w-full xl:w-2/3 xl:mr-20 2xl:mr-32 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 lg:gap-12 xl:gap-8">
+                <div>
+                    <a href="/">
+                        <img src="/assets/img/post-01.jpg" class="rounded-2xl" alt="image">
+                    </a>
+                    <div class="mt-6 lg:mt-8 text-center">
+                        <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                            <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                            26 October 2017
+                        </span>
+                        <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                        <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                        <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                            Learn More
+                            <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:mt-0">
+                    <a href="/">
+                        <img src="/assets/img/post-02.jpg" class="rounded-2xl" alt="image">
+                    </a>
+                    <div class="mt-6 lg:mt-8 text-center">
+                        <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                            <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                            26 October 2017
+                        </span>
+                        <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                        <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                        <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                            Learn More
+                            <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:mt-4">
+                    <a href="/">
+                        <img src="/assets/img/post-03.jpg" class="rounded-2xl" alt="image">
+                    </a>
+                    <div class="mt-6 lg:mt-8 text-center">
+                        <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                            <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                            26 October 2017
+                        </span>
+                        <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                        <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                        <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                            Learn More
+                            <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:mt-4">
+                    <a href="/">
+                        <img src="/assets/img/post-04.jpg" class="rounded-2xl" alt="image">
+                    </a>
+                    <div class="mt-6 lg:mt-8 text-center">
+                        <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                            <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                            26 October 2017
+                        </span>
+                        <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                        <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                        <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                            Learn More
+                            <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:mt-4">
+                    <a href="/">
+                        <img src="/assets/img/post-05.jpg" class="rounded-2xl" alt="image">
+                    </a>
+                    <div class="mt-6 lg:mt-8 text-center">
+                        <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                            <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                            26 October 2017
+                        </span>
+                        <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                        <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                        <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                            Learn More
+                            <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:mt-4">
+                    <a href="/">
+                        <img src="/assets/img/post-06.jpg" class="rounded-2xl" alt="image">
+                    </a>
+                    <div class="mt-6 lg:mt-8 text-center">
+                        <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                            <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                            26 October 2017
+                        </span>
+                        <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                        <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                        <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                            Learn More
+                            <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mt-16 md:mt-20">
+                <a href="" class="h-10 w-10 flex items-center justify-center border-2 border-secondary hover:border-primary transition-colors rounded-full group mr-8">
+                    <i class='bx bxs-chevrons-left text-secondary group-hover:text-primary transition-colors text-xl'></i>
+                </a>
+                <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">1</a>
+                <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">2</a>
+                <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">3</a>
+                <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">4</a>
+                <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">5</a>
+                <a href="" class="h-10 w-10 flex items-center justify-center border-2 border-secondary hover:border-primary transition-colors rounded-full group ml-8">
+                    <i class='bx bxs-chevrons-right text-secondary group-hover:text-primary transition-colors text-xl'></i>
+                </a>
+            </div>
+        </div>
+        <div
+  class="mx-auto mt-16 w-full md:mt-24 md:w-3/5 lg:w-2/5 xl:ml-auto xl:mt-0 xl:w-1/3"
+>
+  <div class="mb-12 rounded-2xl border-2 border-[#eeeeee] px-10 py-8 shadow-xl">
+    <div class="flex items-center justify-center">
+      <span>
+        <img src="/assets/img/icon-subscribe.svg" alt="icon subscribe" />
+      </span>
+      <h3 class="ml-5 font-header text-2xl text-secondary">Subscribe now!</h3>
+    </div>
+    <div
+      class="mx-auto mt-8 flex flex-wrap justify-center md:w-2/3 lg:w-4/5 2xl:w-2/3"
+    >
+      <div class="flex items-center">
+        <i class="bx bxl-spotify text-2xl text-brand-500"></i>
+        <span class="block pl-1 font-body text-brand-500">Spotify</span>
+      </div>
+      <div class="ml-5 flex items-center">
+        <i class="bx bxl-apple text-2xl text-brand-500"></i>
+        <span class="block pl-1 font-body text-brand-500">Itunes</span>
+      </div>
+      <div class="mt-2 flex items-center">
+        <i class="bx bxl-google-plus text-2xl text-brand-500"></i>
+        <span class="block pl-1 font-body text-brand-500">Google</span>
+      </div>
+      <div class="ml-5 mt-2 flex items-center">
+        <i class="bx bxl-soundcloud text-3xl text-brand-500"></i>
+        <span class="block pl-1 font-body text-brand-500">Soundcloud</span>
+      </div>
+    </div>
+  </div>
+  <div class="mb-12 border-t-2 border-[#eeeeee]">
+    <h3 class="mb-10 pt-6 font-header text-2xl uppercase text-secondary">
+      Recent Posts
+    </h3>
+    
+    <div
+      class="mt-6 flex rounded-2xl border-2 border-[#eeeeee] px-5 py-5 shadow-xl md:mt-10 md:px-8 md:py-8"
+    >
+      <a href="/" class="block w-1/3">
+        <img src="/assets/img/post-07.jpg" class="rounded-2xl" alt="image" />
+      </a>
+      <span class="ml-4 block w-2/3 md:ml-5">
+        <span class="block font-body text-xs text-brand-500"
+          >26 October 2017</span
+        >
+        <a
+          href="/"
+          class="font-body text-sm font-bold uppercase text-secondary hover:text-primary"
+          >consectetur adipiscing</a
+        >
+        <p class="pt-1 font-body text-xs font-medium text-brand-500 md:text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra
+          felis ac Diam.
+        </p>
+      </span>
+    </div>
+    
+    <div
+      class="mt-6 flex rounded-2xl border-2 border-[#eeeeee] px-5 py-5 shadow-xl md:mt-10 md:px-8 md:py-8"
+    >
+      <a href="/" class="block w-1/3">
+        <img src="/assets/img/post-07.jpg" class="rounded-2xl" alt="image" />
+      </a>
+      <span class="ml-4 block w-2/3 md:ml-5">
+        <span class="block font-body text-xs text-brand-500"
+          >26 October 2017</span
+        >
+        <a
+          href="/"
+          class="font-body text-sm font-bold uppercase text-secondary hover:text-primary"
+          >consectetur adipiscing</a
+        >
+        <p class="pt-1 font-body text-xs font-medium text-brand-500 md:text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra
+          felis ac Diam.
+        </p>
+      </span>
+    </div>
+    
+    <div
+      class="mt-6 flex rounded-2xl border-2 border-[#eeeeee] px-5 py-5 shadow-xl md:mt-10 md:px-8 md:py-8"
+    >
+      <a href="/" class="block w-1/3">
+        <img src="/assets/img/post-07.jpg" class="rounded-2xl" alt="image" />
+      </a>
+      <span class="ml-4 block w-2/3 md:ml-5">
+        <span class="block font-body text-xs text-brand-500"
+          >26 October 2017</span
+        >
+        <a
+          href="/"
+          class="font-body text-sm font-bold uppercase text-secondary hover:text-primary"
+          >consectetur adipiscing</a
+        >
+        <p class="pt-1 font-body text-xs font-medium text-brand-500 md:text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra
+          felis ac Diam.
+        </p>
+      </span>
+    </div>
+    
+    <div
+      class="mt-6 flex rounded-2xl border-2 border-[#eeeeee] px-5 py-5 shadow-xl md:mt-10 md:px-8 md:py-8"
+    >
+      <a href="/" class="block w-1/3">
+        <img src="/assets/img/post-07.jpg" class="rounded-2xl" alt="image" />
+      </a>
+      <span class="ml-4 block w-2/3 md:ml-5">
+        <span class="block font-body text-xs text-brand-500"
+          >26 October 2017</span
+        >
+        <a
+          href="/"
+          class="font-body text-sm font-bold uppercase text-secondary hover:text-primary"
+          >consectetur adipiscing</a
+        >
+        <p class="pt-1 font-body text-xs font-medium text-brand-500 md:text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra
+          felis ac Diam.
+        </p>
+      </span>
+    </div>
+    
+  </div>
+  <div class="border-t-2 border-[#eeeeee] md:mb-12">
+    <h3 class="mb-10 pt-6 font-header text-2xl uppercase text-secondary">
+      Categories
+    </h3>
+    <div class="mt-6">
+      <a href="/" class="flex items-center">
+        <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+        <span
+          class="ml-2 block font-body font-bold uppercase text-secondary transition-colors hover:text-primary"
+          >Podcast</span
+        >
+      </a>
+      <a href="/" class="mt-5 flex items-center">
+        <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+        <span
+          class="ml-2 block font-body font-bold uppercase text-secondary transition-colors hover:text-primary"
+          >Music</span
+        >
+      </a>
+      <a href="/" class="mt-5 flex items-center">
+        <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+        <span
+          class="ml-2 block font-body font-bold uppercase text-secondary transition-colors hover:text-primary"
+          >Lifestyle</span
+        >
+      </a>
+      <a href="/" class="mt-5 flex items-center">
+        <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+        <span
+          class="ml-2 block font-body font-bold uppercase text-secondary transition-colors hover:text-primary"
+          >Education</span
+        >
+      </a>
+      <a href="/" class="mt-5 flex items-center">
+        <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+        <span
+          class="ml-2 block font-body font-bold uppercase text-secondary transition-colors hover:text-primary"
+          >Business</span
+        >
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
+  <div class="relative">
+  <div
+    class="absolute inset-0 w-full bg-brand-600 bg-cover bg-center bg-no-repeat object-cover mix-blend-multiply"
+    style="background-image: url(/assets/img/bg-cta.png)"
+  ></div>
+  <div class="container relative z-10 py-20 md:py-28">
+    <div class="mr-auto w-full md:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3">
+      <h3
+        class="font-header text-4xl uppercase text-white md:text-5xl lg:text-6xl"
+      >
+        Don't miss our weekly episodes!
+      </h3>
+      <p class="mt-6 font-body text-white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc
+        odio, dapibus eu tortor id, dignissim dictum massa. Donec ac semper
+        nulla.
+      </p>
+      <form class="group mt-6 flex flex-col md:flex-row">
+        <input
+          type="email"
+          id="email"
+          placeholder="EMAIL"
+          class="rounded-full border border-white bg-transparent px-6 py-3 font-header text-white placeholder-white focus:border-primary focus:ring-primary md:w-2/3"
+        />
+        <button
+          class="mt-4 rounded-full border border-transparent bg-primary px-8 py-3 font-header uppercase text-brand-400 transition duration-300 focus:outline-none group-hover:border-brand-500 group-hover:bg-white md:mt-0 md:ml-4 md:w-1/3"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+ <div
+  class="relative border-t-10 border-b-4 border-t-brand-300 border-b-primary bg-dark"
+>
+  <div class="absolute top-0 left-0 md:top-32 xl:top-10 xl:-left-28 2xl:left-0">
+    <img src="/assets/img/footer-shape-02.svg" alt="" />
+  </div>
+  <div class="absolute bottom-0 right-0 md:top-32 xl:top-10">
+    <img src="/assets/img/footer-shape-01.svg" alt="" />
+  </div>
+  <div class="container flex flex-wrap items-center justify-between py-14">
+    <div class="w-full md:w-3/5 xl:w-1/4 2xl:w-1/5">
+      <a href="/">
+        <img src="/assets/img/logo-podcast.svg" alt="logo" />
+      </a>
+      <p class="mt-7 block font-body font-bold text-white">
+        Consectetur adipiscing
+      </p>
+      <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus
+        lacus eget tortor porta placerat.
+      </p>
+    </div>
+    <div class="mt-10 w-full md:mt-0 md:w-2/5 xl:w-1/5">
+      <h4 class="font-body font-bold text-primary">Information</h4>
+      <ul class="mt-5 grid grid-cols-2">
+        <li>
+          <a href="/" class="font-header uppercase text-white">Home</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Blog</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white"
+            >Podcast Episode</a
+          >
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Blog Post</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white"
+            >Podcast Single</a
+          >
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Single Page</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-10 w-full md:mt-12 md:w-3/5 xl:mt-0 xl:w-1/4">
+      <a href="/" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bxs-location-plus text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          New York, 12 Jimbaran, 0034
+        </span>
+      </a>
+      <a href="tel:(+62) 112 3312" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bxs-phone-call text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          (+62) 112 3312
+        </span>
+      </a>
+      <a href="mailto:podcast@infopodcast.com" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bx-mail-send text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          podcast@infopodcast.com
+        </span>
+      </a>
+    </div>
+    <div class="mt-10 w-full md:mt-12 md:w-2/5 xl:mt-0 xl:w-1/6">
+      <span class="font-body font-bold text-white">Follow us</span>
+      <div class="flex pt-4">
+        <a href="/">
+          <i class="bx bxl-spotify text-xl text-white hover:text-primary"></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-soundcloud pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-instagram pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-youtube pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+
+      <!-- Alpine -->
+      <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      ></script>
+    </main>
+  </body>
+</html>

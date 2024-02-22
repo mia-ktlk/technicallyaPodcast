@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  html {
+    @apply font-body antialiased;
+  }
+
+  [class*="transition-"] {
+    @apply duration-300;
+  }
+
+  [x-cloak] { display: none !important; }
+}
+
+@tailwind utilities;

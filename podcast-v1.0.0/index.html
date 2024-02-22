@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>
+      Homepage | Podcast
+    </title>
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
+
+    <meta
+      property="og:title"
+      content="Homepage | Podcast"
+    />
+
+    <meta property="og:locale" content="en_US" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="Podcast" />
+
+    <meta
+      property="og:image"
+      content="https://podcast.redpixelthemes.com/assets/img/social.jpg"
+    />
+
+    <link rel="canonical" href="https://podcast.redpixelthemes.com/" />
+
+    <meta property="og:url" content="https://podcast.redpixelthemes.com/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:site" content="@redpixelthemes" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://podcast.redpixelthemes.com/assets/img/favicon.png"
+    />
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/styles/main.min.css" />
+  </head>
+
+  <body x-data="{ mobileMenu: false }" :class="{'relative overflow-hidden max-h-screen': mobileMenu }">
+    <main>
+      <div>
+  <!--Mobile menu-->
+  <div x-cloak x-show="mobileMenu">
+    <div class="absolute inset-0 z-50 bg-black/75"></div>
+    <div class="fixed right-0 z-50 h-screen w-64 bg-slate-500 xl:hidden">
+      <button
+        class="absolute top-0 right-0 mt-4 mr-4"
+        @click="mobileMenu = false"
+      >
+        <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+      </button>
+      <ul class="absolute top-20 py-10 text-left">
+        <li class="py-3">
+          <a
+            href="/"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Home</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/episodes"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Podcast Episodes</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/episode"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Podcast Episode</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/blog"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Blog</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/post"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Blog Post</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/single"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Single Page</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"
+  >
+    <div class="container relative z-40 flex items-center justify-between py-7">
+      <div class="flex items-center justify-between">
+        <a href="/" class="w-40">
+          <img src="/assets/img/logo-podcast.svg" alt="logo" />
+        </a>
+
+        <!--Menu -->
+        <ul class="ml-12 hidden xl:flex">
+          <li>
+            <a
+              href="/"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/episodes"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Podcast Episodes</a
+            >
+          </li>
+          <li>
+            <a
+              href="/episode"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Podcast Episode</a
+            >
+          </li>
+          <li>
+            <a
+              href="/blog"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="/post"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Blog Post</a
+            >
+          </li>
+          <li>
+            <a
+              href="/single"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Single Page</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="hidden items-center xl:flex">
+        <div class="mr-10 hidden 2xl:flex">
+          <a href="/">
+            <i
+              class="bx bxl-spotify text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-soundcloud pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-instagram pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-youtube pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+        </div>
+        <form class="relative flex items-center">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search"
+            class="rounded-full border-2 border-white bg-transparent px-4 py-2 font-body text-sm text-white placeholder-white focus:border-primary focus:ring-primary"
+          />
+          <button
+            class="absolute right-2 top-1/2 -translate-y-1/2 focus:outline-none"
+          >
+            <i class="bx bx-search-alt-2 text-xl text-white"></i>
+          </button>
+        </form>
+      </div>
+
+      <!--Mobile menu button-->
+      <div class="absolute right-0 md:right-2 xl:hidden">
+        <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+          <i class="bx bx-menu-alt-right text-4xl text-white"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="relative">
+    <div class="mix-blend-normal absolute inset-0 bg-right md:bg-center bg-cover bg-no-repeat w-full object-cover bg-black" style="background-image:url(/assets/img/bg-home-hero.png)"></div>
+
+    <div class="relative z-10 pt-36 md:pt-40 pb-24 md:pb-40 border-b-4 border-primary">
+        <div class="container">
+            <div class="w-full md:w-2/3 lg:w-3/5 xl:w-1/2 2xl:w-2/5 ml-auto">
+                <h1 class="font-header text-white text-5xl md:text-7xl uppercase">Most popular season: Origins</h1>
+                <div class="mt-6">
+                    <div class="flex mt-4">
+                        <div class="mr-10">
+                            <span class="font-header text-white text-sm md:text-base uppercase block">Listening time</span>
+                            <span class="font-body font-bold text-xl text-white">10h 32min</span>
+                        </div>
+                        <div class="mr-10">
+                            <span class="font-header text-white text-sm md:text-base uppercase block">Episodes</span>
+                            <span class="font-body font-bold text-xl text-white">8</span>
+                        </div>
+                        <div class="mr-10">
+                            <span class="font-header text-white text-sm md:text-base uppercase block">Downloads</span>
+                            <span class="font-body font-bold text-xl  text-white">7,200</span>
+                        </div>
+                    </div>
+                    <p class="font-body text-white mt-5 md:pr-20 2xl:pr-16">Consectetur adipiscing elit. Donec nunc odio, dapibus eu tortor id, dignissim dictum massa.</p>
+                </div>
+                <div class="flex flex-col md:flex-row mt-8">
+                    <button class="w-full font-body font-bold text-center text-white px-10 py-4 border-2 border-white hover:border-primary hover:bg-primary rounded-full transition-colors">Share</button>
+                    <button class="md:ml-8 mt-5 md:mt-0 w-full font-body font-bold text-center text-white px-6 py-2 border-2 border-primary hover:border-white bg-primary hover:bg-transparent rounded-full transition-colors flex justify-between items-center group">
+                            Start Listening
+                        <span class="h-8 w-8 bg-white group-hover:bg-primary transition-colors rounded-full flex items-center justify-center ml-6">
+                            <i class='bx bx-play text-primary group-hover:text-white text-2xl ml-0.5'></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="flex items-center mt-8">
+                    <span class="font-header text-white uppercase">
+                        LISTEN & SUBSCRIBE ON:
+                    </span>
+                    <div class="pl-3">
+                        <a href="/">
+                            <i class='bx bxl-spotify text-white hover:text-primary transition-colors text-xl'></i>
+                        </a>
+                        <a href="/">
+                            <i class='bx bxl-soundcloud text-white hover:text-primary transition-colors text-xl pl-2' ></i>
+                        </a>
+                        <a href="/">
+                            <i class='bx bxl-instagram text-white hover:text-primary transition-colors text-xl pl-2'></i>
+                        </a>
+                        <a href="/">
+                            <i class='bx bxl-youtube text-white hover:text-primary transition-colors text-xl pl-2'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-brand-50 relative overflow-hidden border-b-20 border-brand-200">
+    <div class="absolute xl:top-24 -left-56 2xl:-left-32"><img src="/assets/img/about-shape-01.svg" alt=""></div>
+    <div class="container py-20 md:py-24 flex flex-col lg:flex-row justify-between z-20 relative">
+        <div class="lg:w-1/2 xl:w-2/5">
+            <img src="/assets/img/about-image.jpg" class="w-full h-full rounded-2xl" alt="image">
+        </div>
+        <div class="lg:w-1/2 xl:w-3/5 lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-12 lg:mt-0">
+            <div class="absolute -bottom-24 2xl:bottom-48 -left-40 xl:left-auto right-0 xl:-right-24 2xl:-right-32"><img src="/assets/img/about-shape-02.svg" alt=""></div>
+            <div class="z-30 relative">
+                <h2 class="font-header text-secondary text-3xl md:text-4xl">About our Podcast</h4>
+                <p class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">Consectetur adipiscing elit. Donec nunc odio, dapibus eu tortor id, dignissim dictum massa. Donec ac semper nulla. Nunc eros purus, condimentum ac justo nec, congue fringilla turpis. Pellentesque velit nibh, porttitor eu eleifend vulputate, congue in neque.
+                <br/><br/>
+                Phasellus id euismod ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus ligula, facilisis non libero in, hendrerit ullamcorper tortor. Aenean id lorem in ipsum euismod lacinia eu vel purus.</p>
+                <div class="bg-white rounded-3xl p-8 2xl:p-10 mt-8 2xl:mt-10">
+                    <div class="flex">
+                        <i class='bx bxs-star text-xl text-brand-300' ></i>
+                        <i class='bx bxs-star text-xl text-brand-300' ></i>
+                        <i class='bx bxs-star text-xl text-brand-300' ></i>
+                        <i class='bx bxs-star text-xl text-brand-300' ></i>
+                        <i class='bx bxs-star text-xl text-brand-200' ></i>
+                    </div>
+                    <p class="xl:text-lg text-brand-400 mt-4">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                    <div class="flex items-center mt-5">
+                        <div>
+                            <img src="/assets/img/client-image.png" class="rounded-full w-16 h-16 object-cover" alt="client image">
+                        </div>
+                        <div class="block pl-5">
+                            <span class="block font-body font-bold text-lg text-brand-400">Client One</span>
+                            <span class="font-body font-light text-brand-500 text-sm">Position</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="relative overflow-hidden border-b-20 border-brand-300">
+    <div class="relative">
+        <div class="absolute top-7 md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"><img src="/assets/img/authors-shape-02.svg" alt="shape"></div>
+        <div class="container my-16 md:my-24 relative z-30">
+            <div class="flex flex-col-reverse lg:flex-row justify-between">
+                <div class="lg:w-1/2 2xl:w-2/5 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
+                    <div>
+                        <h4 class="font-header text-brand-400 text-3xl md:text-4xl">The Authors One</h4>
+                        <p class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">Consectetur adipiscing elit. Donec nunc odio, dapibus eu tortor id, dignissim dictum massa. Donec ac semper nulla. Nunc eros purus, condimentum ac justo nec, congue fringilla turpis.
+                        <br/><br/>
+                        Pellentesque velit nibh, porttitor eu eleifend vulputate, congue in neque. Phasellus id euismod ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">Lorem ipsum</h2>
+                        <span class="flex mt-2">
+                            <a href="https://twitter.com/">
+                                <i class='bx bxl-twitter text-xl text-primary hover:text-brand-400' ></i>
+                            </a>
+                            <a href="https://facebook.com/">
+                                <i class='bx bxl-facebook text-xl text-primary hover:text-brand-400 pl-2' ></i>
+                            </a>
+                            <a href="https://instgram.com/">
+                                <i class='bx bxl-instagram text-xl text-primary hover:text-brand-400 pl-2' ></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="/assets/img/author-02.jpg" class="w-full h-80 md:h-100 object-cover rounded-2xl" alt="image">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="relative">
+        <div class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"><img src="/assets/img/authors-shape-02.svg" alt="shape"></div>
+
+        <div class="container my-16 md:my-24 relative z-30">
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="lg:w-1/2">
+                    <img src="/assets/img/author-01.jpg" class="w-full h-80 md:h-100 object-cover rounded-2xl" alt="image">
+                </div>
+                <div class="lg:w-1/2 2xl:w-2/5 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
+                    <div>
+                        <h4 class="font-header text-brand-400 text-3xl md:text-4xl">The Authors Two</h4>
+                        <p class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">Consectetur adipiscing elit. Donec nunc odio, dapibus eu tortor id, dignissim dictum massa. Donec ac semper nulla. Nunc eros purus, condimentum ac justo nec, congue fringilla turpis.
+                            <br/><br/>
+                            Pellentesque velit nibh, porttitor eu eleifend vulputate, congue in neque. Phasellus id euismod ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">Lorem ipsum</h2>
+                        <span class="flex mt-2">
+                            <a href="https://twitter.com/">
+                                <i class='bx bxl-twitter text-xl text-primary hover:text-brand-400' ></i>
+                            </a>
+                            <a href="https://facebook.com/">
+                                <i class='bx bxl-facebook text-xl text-primary hover:text-brand-400 pl-2' ></i>
+                            </a>
+                            <a href="https://instgram.com/">
+                                <i class='bx bxl-instagram text-xl text-primary hover:text-brand-400 pl-2' ></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="relative">
+    <div class="mix-blend-normal absolute inset-0 bg-center bg-cover bg-no-repeat w-full object-cover bg-black" style="background-image:url(/assets/img/best-episode-image.png)"></div>
+    <div class="relative border-b-4 border-brand-300">
+        <div class="absolute top-72 left-0"><img src="/assets/img/best-episode-shape.svg" alt="shape"></div>
+        <div class="container py-16 md:py-32 lg:py-40 z-30 relative">
+            <div class="md:w-5/6 lg:w-3/5 2xl:w-1/2 rounded-2xl bg-brand-400 px-7 md:px-10 2xl:px-12 py-6 md:py-8 2xl:py-12">
+                <h3 class="font-header text-white text-3xl md:text-4xl uppercase">Interdum et malesuada fames ac</h3>
+                <p class="font-body text-white mt-6 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">It's a show about the life of the digital nomads all over the world and what they struggle with or what happens to them when they travel.</p>
+                <div class="bg-primary px-3 md:px-6 py-2 rounded-full flex items-center mt-6">
+                    <span class="px-1 md:px-1 md:py-px bg-white rounded-full flex items-center">
+                        <i class='bx bx-play text-primary text-2xl md:text-3xl' ></i>
+                    </span>
+                    <span class="block ml-3 font-body text-xs md:text-sm font-light text-white">00:00</span>
+                    <span class="flex-1 rounded-full bg-white h-2 ml-3"></span>
+                    <span class="block ml-3 font-body text-xs md:text-sm font-light text-white">00:50</span>
+                    <span class="block ml-3">
+                        <i class='bx bx-download text-white text-xl'></i>
+                    </span>
+                </div>
+                <div class="flex flex-col md:flex-row items-center mt-6">
+                    <div class="group w-full md:w-auto">
+                        <button class="w-full font-header text-center text-white px-16 py-4 border-2 border-white group-hover:border-primary group-hover:bg-primary rounded-full transition duration-300 uppercase">Get in touch</button>
+                    </div>
+                    <div class="flex md:ml-10 mt-5 md:mt-0">
+                        <a href="/">
+                            <i class='bx bxl-spotify text-white text-2xl'></i>
+                        </a>
+                        <a href="/">
+                            <i class='bx bxl-soundcloud text-white text-2xl pl-2' ></i>
+                        </a>
+                        <a href="/">
+                            <i class='bx bxl-instagram text-white text-2xl pl-2'></i>
+                        </a>
+                        <a href="/">
+                            <i class='bx bxl-youtube text-white text-2xl pl-2'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Tabs  -->
+<div class="container py-20 md:py-24" x-data="{ activeTab: 'podcast'}">
+    <h2 class="text-brand-400 font-header text-3xl md:text-4xl uppercase text-center">Podcast Episodes and Blog Posts</h2>
+    <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
+        <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
+            <div class="md:w-1/2 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group" @click="activeTab = 'podcast'">
+                <span class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2">
+                    <i class='bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300'></i>Podcast Episodes</span>
+            </div>
+            <div class="md:w-1/2 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300" @click="activeTab = 'posts'">
+                <span class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2">
+                    <i class='bx bx-right-arrow-alt text-xl active:text-white text-brand-300'></i>Blog Post</span>
+            </div>
+        </div>
+    </div>
+        <div class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row" x-show=" activeTab == 'posts'">
+            <div class="w-full xl:w-2/3 mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 lg:gap-12 xl:gap-8">
+                    <div>
+                        <a href="/">
+                            <img src="/assets/img/post-01.jpg" class="rounded-2xl" alt="image">
+                        </a>
+                        <div class="mt-6 lg:mt-8 text-center">
+                            <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                                <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                                26 October 2017
+                            </span>
+                            <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                            <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                            <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                                Learn More
+                                <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:mt-0">
+                        <a href="/">
+                            <img src="/assets/img/post-02.jpg" class="rounded-2xl" alt="image">
+                        </a>
+                        <div class="mt-6 lg:mt-8 text-center">
+                            <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                                <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                                26 October 2017
+                            </span>
+                            <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                            <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                            <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                                Learn More
+                                <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:mt-4">
+                        <a href="/">
+                            <img src="/assets/img/post-03.jpg" class="rounded-2xl" alt="image">
+                        </a>
+                        <div class="mt-6 lg:mt-8 text-center">
+                            <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                                <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                                26 October 2017
+                            </span>
+                            <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                            <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                            <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                                Learn More
+                                <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:mt-4">
+                        <a href="/">
+                            <img src="/assets/img/post-04.jpg" class="rounded-2xl" alt="image">
+                        </a>
+                        <div class="mt-6 lg:mt-8 text-center">
+                            <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                                <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                                26 October 2017
+                            </span>
+                            <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                            <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                            <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                                Learn More
+                                <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:mt-4">
+                        <a href="/">
+                            <img src="/assets/img/post-05.jpg" class="rounded-2xl" alt="image">
+                        </a>
+                        <div class="mt-6 lg:mt-8 text-center">
+                            <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                                <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                                26 October 2017
+                            </span>
+                            <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                            <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                            <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                                Learn More
+                                <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:mt-4">
+                        <a href="/">
+                            <img src="/assets/img/post-06.jpg" class="rounded-2xl" alt="image">
+                        </a>
+                        <div class="mt-6 lg:mt-8 text-center">
+                            <span class="flex justify-center items-center text-[#9b9b9b] text-sm">
+                                <i class='bx bx-calendar text-secondary text-lg mr-2'></i>
+                                26 October 2017
+                            </span>
+                            <a href="/" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Header style Collector for</a>
+                            <p class="font-medium text-secondary mt-3">It's very easy to create stylish and beautiful prototypes for your future projects, both graphical and dynamic.</p>
+                            <a href="/" class="flex justify-center items-center group font-header text-secondary mt-5">
+                                Learn More
+                                <i class='bx bx-right-arrow-alt text-secondary group-hover:text-primary text-2xl pl-3'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-16 md:mt-20">
+                    <a href="" class="h-10 w-10 flex items-center justify-center border-2 border-secondary hover:border-primary transition-colors rounded-full group mr-8">
+                        <i class='bx bxs-chevrons-left text-secondary group-hover:text-primary transition-colors text-xl'></i>
+                    </a>
+                    <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">1</a>
+                    <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">2</a>
+                    <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">3</a>
+                    <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">4</a>
+                    <a href="" class="font-medium text-secondary hover:text-primary transition-colors text-xl px-2 block">5</a>
+                    <a href="" class="h-10 w-10 flex items-center justify-center border-2 border-secondary hover:border-primary transition-colors rounded-full group ml-8">
+                        <i class='bx bxs-chevrons-right text-secondary group-hover:text-primary transition-colors text-xl'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div x-show=" activeTab == 'podcast' ">
+        
+            <div class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row">
+                <div class="relative lg:absolute lg:-bottom-10 left-0">
+                    <img src="/assets/img/podcast-image.jpg" class="w-full lg:w-64 h-84 md:h-120 lg:h-64 object-cover" alt="image">
+                </div>
+                <div class="lg:w-11/12 border border-brand-500 ml-auto pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6">
+                    <div class="lg:w-3/4 xl:w-5/6 ml-auto">
+                        <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p>
+                        <h3 class="font-header text-secondary uppercase text-xl md:text-3xl pt-1">Suspendisse eu commodo massa mecenas</h3>
+                        <div class="flex items-center mt-3">
+                            <span class="px-1 md:px-1 md:py-px bg-primary rounded-full flex items-center">
+                                <i class='bx bx-play text-white text-2xl md:text-3xl' ></i>
+                            </span>
+                            <span class="block ml-3 font-body text-xs md:text-sm font-light text-brand-500">00:00</span>
+                            <span class="flex-1 rounded-full bg-secondary h-2 ml-3"></span>
+                            <span class="block ml-3 font-body text-xs md:text-sm font-light text-brand-500">00:50</span>
+                            <span class="block ml-3">
+                                <i class='bx bx-download text-secondary text-xl'></i>
+                            </span>
+
+                        </div>
+                        <p class="font-body text-secondary md:text-lg mt-3">Consectetur adipiscing elit. Donec nunc odio, dapibus eu tortor id, dignissim.</p>
+                        <div class="flex mt-5">
+                            <a href="/">
+                                <i class='bx bxl-spotify text-secondary text-xl'></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-soundcloud text-secondary text-xl pl-2' ></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-instagram text-secondary text-xl pl-2'></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-youtube text-secondary text-xl pl-2'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row">
+                <div class="relative lg:absolute lg:-bottom-10 left-0">
+                    <img src="/assets/img/podcast-image.jpg" class="w-full lg:w-64 h-84 md:h-120 lg:h-64 object-cover" alt="image">
+                </div>
+                <div class="lg:w-11/12 border border-brand-500 ml-auto pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6">
+                    <div class="lg:w-3/4 xl:w-5/6 ml-auto">
+                        <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p>
+                        <h3 class="font-header text-secondary uppercase text-xl md:text-3xl pt-1">Suspendisse eu commodo massa mecenas</h3>
+                        <div class="flex items-center mt-3">
+                            <span class="px-1 md:px-1 md:py-px bg-primary rounded-full flex items-center">
+                                <i class='bx bx-play text-white text-2xl md:text-3xl' ></i>
+                            </span>
+                            <span class="block ml-3 font-body text-xs md:text-sm font-light text-brand-500">00:00</span>
+                            <span class="flex-1 rounded-full bg-secondary h-2 ml-3"></span>
+                            <span class="block ml-3 font-body text-xs md:text-sm font-light text-brand-500">00:50</span>
+                            <span class="block ml-3">
+                                <i class='bx bx-download text-secondary text-xl'></i>
+                            </span>
+
+                        </div>
+                        <p class="font-body text-secondary md:text-lg mt-3">Consectetur adipiscing elit. Donec nunc odio, dapibus eu tortor id, dignissim.</p>
+                        <div class="flex mt-5">
+                            <a href="/">
+                                <i class='bx bxl-spotify text-secondary text-xl'></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-soundcloud text-secondary text-xl pl-2' ></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-instagram text-secondary text-xl pl-2'></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-youtube text-secondary text-xl pl-2'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row">
+                <div class="relative lg:absolute lg:-bottom-10 left-0">
+                    <img src="/assets/img/podcast-image.jpg" class="w-full lg:w-64 h-84 md:h-120 lg:h-64 object-cover" alt="image">
+                </div>
+                <div class="lg:w-11/12 border border-brand-500 ml-auto pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6">
+                    <div class="lg:w-3/4 xl:w-5/6 ml-auto">
+                        <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p>
+                        <h3 class="font-header text-secondary uppercase text-xl md:text-3xl pt-1">Suspendisse eu commodo massa mecenas</h3>
+                        <div class="flex items-center mt-3">
+                            <span class="px-1 md:px-1 md:py-px bg-primary rounded-full flex items-center">
+                                <i class='bx bx-play text-white text-2xl md:text-3xl' ></i>
+                            </span>
+                            <span class="block ml-3 font-body text-xs md:text-sm font-light text-brand-500">00:00</span>
+                            <span class="flex-1 rounded-full bg-secondary h-2 ml-3"></span>
+                            <span class="block ml-3 font-body text-xs md:text-sm font-light text-brand-500">00:50</span>
+                            <span class="block ml-3">
+                                <i class='bx bx-download text-secondary text-xl'></i>
+                            </span>
+
+                        </div>
+                        <p class="font-body text-secondary md:text-lg mt-3">Consectetur adipiscing elit. Donec nunc odio, dapibus eu tortor id, dignissim.</p>
+                        <div class="flex mt-5">
+                            <a href="/">
+                                <i class='bx bxl-spotify text-secondary text-xl'></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-soundcloud text-secondary text-xl pl-2' ></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-instagram text-secondary text-xl pl-2'></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-youtube text-secondary text-xl pl-2'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row">
+                <div class="relative lg:absolute lg:-bottom-10 left-0">
+                    <img src="/assets/img/podcast-image.jpg" class="w-full lg:w-64 h-84 md:h-120 lg:h-64 object-cover" alt="image">
+                </div>
+                <div class="lg:w-11/12 border border-brand-500 ml-auto pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6">
+                    <div class="lg:w-3/4 xl:w-5/6 ml-auto">
+                        <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p>
+                        <h3 class="font-header text-secondary uppercase text-xl md:text-3xl pt-1">Suspendisse eu commodo massa mecenas</h3>
+                        <div class="flex items-center mt-3">
+                            <span class="px-1 md:px-1 md:py-px bg-primary rounded-full flex items-center">
+                                <i class='bx bx-play text-white text-2xl md:text-3xl' ></i>
+                            </span>
+                            <span class="block ml-3 font-body text-xs md:text-sm font-light text-brand-500">00:00</span>
+                            <span class="flex-1 rounded-full bg-secondary h-2 ml-3"></span>
+                            <span class="block ml-3 font-body text-xs md:text-sm font-light text-brand-500">00:50</span>
+                            <span class="block ml-3">
+                                <i class='bx bx-download text-secondary text-xl'></i>
+                            </span>
+
+                        </div>
+                        <p class="font-body text-secondary md:text-lg mt-3">Consectetur adipiscing elit. Donec nunc odio, dapibus eu tortor id, dignissim.</p>
+                        <div class="flex mt-5">
+                            <a href="/">
+                                <i class='bx bxl-spotify text-secondary text-xl'></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-soundcloud text-secondary text-xl pl-2' ></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-instagram text-secondary text-xl pl-2'></i>
+                            </a>
+                            <a href="/">
+                                <i class='bx bxl-youtube text-secondary text-xl pl-2'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    <span class="flex justify-center mt-12 md:mt-24 lg:mt-32 xl:mt-36 ">
+        <a href="/" class="bg-primary hover:bg-white px-12 py-3 rounded-full font-header text-brand-400 uppercase mt-4 md:mt-0 md:ml-4 focus:outline-none border border-transparent hover:border-brand-500 transition-colors">Browse more episodes</a>
+    </span>
+</div>
+  <div class="relative">
+  <div
+    class="absolute inset-0 w-full bg-brand-600 bg-cover bg-center bg-no-repeat object-cover mix-blend-multiply"
+    style="background-image: url(/assets/img/bg-cta.png)"
+  ></div>
+  <div class="container relative z-10 py-20 md:py-28">
+    <div class="mr-auto w-full md:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3">
+      <h3
+        class="font-header text-4xl uppercase text-white md:text-5xl lg:text-6xl"
+      >
+        Don't miss our weekly episodes!
+      </h3>
+      <p class="mt-6 font-body text-white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc
+        odio, dapibus eu tortor id, dignissim dictum massa. Donec ac semper
+        nulla.
+      </p>
+      <form class="group mt-6 flex flex-col md:flex-row">
+        <input
+          type="email"
+          id="email"
+          placeholder="EMAIL"
+          class="rounded-full border border-white bg-transparent px-6 py-3 font-header text-white placeholder-white focus:border-primary focus:ring-primary md:w-2/3"
+        />
+        <button
+          class="mt-4 rounded-full border border-transparent bg-primary px-8 py-3 font-header uppercase text-brand-400 transition duration-300 focus:outline-none group-hover:border-brand-500 group-hover:bg-white md:mt-0 md:ml-4 md:w-1/3"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+ <div
+  class="relative border-t-10 border-b-4 border-t-brand-300 border-b-primary bg-dark"
+>
+  <div class="absolute top-0 left-0 md:top-32 xl:top-10 xl:-left-28 2xl:left-0">
+    <img src="/assets/img/footer-shape-02.svg" alt="" />
+  </div>
+  <div class="absolute bottom-0 right-0 md:top-32 xl:top-10">
+    <img src="/assets/img/footer-shape-01.svg" alt="" />
+  </div>
+  <div class="container flex flex-wrap items-center justify-between py-14">
+    <div class="w-full md:w-3/5 xl:w-1/4 2xl:w-1/5">
+      <a href="/">
+        <img src="/assets/img/logo-podcast.svg" alt="logo" />
+      </a>
+      <p class="mt-7 block font-body font-bold text-white">
+        Consectetur adipiscing
+      </p>
+      <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus
+        lacus eget tortor porta placerat.
+      </p>
+    </div>
+    <div class="mt-10 w-full md:mt-0 md:w-2/5 xl:w-1/5">
+      <h4 class="font-body font-bold text-primary">Information</h4>
+      <ul class="mt-5 grid grid-cols-2">
+        <li>
+          <a href="/" class="font-header uppercase text-white">Home</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Blog</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white"
+            >Podcast Episode</a
+          >
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Blog Post</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white"
+            >Podcast Single</a
+          >
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Single Page</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-10 w-full md:mt-12 md:w-3/5 xl:mt-0 xl:w-1/4">
+      <a href="/" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bxs-location-plus text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          New York, 12 Jimbaran, 0034
+        </span>
+      </a>
+      <a href="tel:(+62) 112 3312" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bxs-phone-call text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          (+62) 112 3312
+        </span>
+      </a>
+      <a href="mailto:podcast@infopodcast.com" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bx-mail-send text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          podcast@infopodcast.com
+        </span>
+      </a>
+    </div>
+    <div class="mt-10 w-full md:mt-12 md:w-2/5 xl:mt-0 xl:w-1/6">
+      <span class="font-body font-bold text-white">Follow us</span>
+      <div class="flex pt-4">
+        <a href="/">
+          <i class="bx bxl-spotify text-xl text-white hover:text-primary"></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-soundcloud pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-instagram pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-youtube pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+
+      <!-- Alpine -->
+      <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      ></script>
+    </main>
+  </body>
+</html>

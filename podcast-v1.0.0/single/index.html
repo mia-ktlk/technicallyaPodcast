@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>
+      Single Page | Podcast
+    </title>
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
+
+    <meta
+      property="og:title"
+      content="Single Page | Podcast"
+    />
+
+    <meta property="og:locale" content="en_US" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="Podcast" />
+
+    <meta
+      property="og:image"
+      content="https://podcast.redpixelthemes.com/assets/img/social.jpg"
+    />
+
+    <link rel="canonical" href="https://podcast.redpixelthemes.com/single/" />
+
+    <meta property="og:url" content="https://podcast.redpixelthemes.com/single/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:site" content="@redpixelthemes" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://podcast.redpixelthemes.com/assets/img/favicon.png"
+    />
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/styles/main.min.css" />
+  </head>
+
+  <body x-data="{ mobileMenu: false }" :class="{'relative overflow-hidden max-h-screen': mobileMenu }">
+    <main>
+      <div>
+  <!--Mobile menu-->
+  <div x-cloak x-show="mobileMenu">
+    <div class="absolute inset-0 z-50 bg-black/75"></div>
+    <div class="fixed right-0 z-50 h-screen w-64 bg-slate-500 xl:hidden">
+      <button
+        class="absolute top-0 right-0 mt-4 mr-4"
+        @click="mobileMenu = false"
+      >
+        <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+      </button>
+      <ul class="absolute top-20 py-10 text-left">
+        <li class="py-3">
+          <a
+            href="/"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Home</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/episodes"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Podcast Episodes</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/episode"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Podcast Episode</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/blog"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Blog</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/post"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Blog Post</a
+          >
+        </li>
+        <li class="py-2">
+          <a
+            href="/single"
+            class="rounded-full px-5 py-2 font-header text-xl uppercase text-white transition-colors"
+            >Single Page</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"
+  >
+    <div class="container relative z-40 flex items-center justify-between py-7">
+      <div class="flex items-center justify-between">
+        <a href="/" class="w-40">
+          <img src="/assets/img/logo-podcast.svg" alt="logo" />
+        </a>
+
+        <!--Menu -->
+        <ul class="ml-12 hidden xl:flex">
+          <li>
+            <a
+              href="/"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/episodes"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Podcast Episodes</a
+            >
+          </li>
+          <li>
+            <a
+              href="/episode"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Podcast Episode</a
+            >
+          </li>
+          <li>
+            <a
+              href="/blog"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="/post"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Blog Post</a
+            >
+          </li>
+          <li>
+            <a
+              href="/single"
+              class="rounded-full px-5 py-2 font-header uppercase text-white transition-colors hover:bg-primary"
+              >Single Page</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="hidden items-center xl:flex">
+        <div class="mr-10 hidden 2xl:flex">
+          <a href="/">
+            <i
+              class="bx bxl-spotify text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-soundcloud pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-instagram pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+          <a href="/">
+            <i
+              class="bx bxl-youtube pl-2 text-xl text-white transition-colors hover:text-primary"
+            ></i>
+          </a>
+        </div>
+        <form class="relative flex items-center">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search"
+            class="rounded-full border-2 border-white bg-transparent px-4 py-2 font-body text-sm text-white placeholder-white focus:border-primary focus:ring-primary"
+          />
+          <button
+            class="absolute right-2 top-1/2 -translate-y-1/2 focus:outline-none"
+          >
+            <i class="bx bx-search-alt-2 text-xl text-white"></i>
+          </button>
+        </form>
+      </div>
+
+      <!--Mobile menu button-->
+      <div class="absolute right-0 md:right-2 xl:hidden">
+        <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+          <i class="bx bx-menu-alt-right text-4xl text-white"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="relative">
+    <div class="mix-blend-normal absolute inset-0 bg-right md:bg-center bg-cover bg-no-repeat w-full object-cover bg-black" style="background-image:url(/assets/img/bg-single-page.png)"></div>
+
+    <div class="relative z-20 pt-40 md:pt-48 pb-32 md:pb-40 border-b-4 border-primary">
+        <h1 class="uppercase text-white font-header text-3xl md:text-4xl text-center">Single page</h1>
+    </div>
+</div>
+<div class="container py-20 md:py-24">
+    <div class="mt-10 prose prose mx-auto">
+        <h1>This is the primary heading and there should only be one of <strong>these</strong> per page</h1>
+        <p>A small <a href="">paragraph</a> to <em>emphasis</em> and show <strong>important</strong> bits.</p>
+        <ul>
+            <li>This is a list item</li>
+            <li>So is this - there could be more</li>
+            <li>Make sure to style list items to:
+                <ul>
+                    <li>Not forgetting child list items</li>
+                    <li>Not forgetting child list items</li>
+                    <li>
+                        Not forgetting child list items
+                        <ul>
+                            <li>Not forgetting child list items</li>
+                            <li>Not forgetting child list items</li>
+                            <li>Not forgetting child list items</li>
+                            <li>Not forgetting child list items</li>
+                        </ul>
+                    </li>
+                    <li>Not forgetting child list items</li>
+                </ul>
+            </li>
+            <li>A couple more</li>
+            <li>top level list items</li>
+        </ul>
+        <p>Don't forget <strong>Ordered lists</strong>:</p>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>
+                        Aliquam tincidunt mauris eu risus.
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                            <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.
+            </li>
+        </ol>
+        <h2>A sub heading which is not as important as the first, but is quite imporant overall</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+            ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                </tr>
+                <tr>
+                    <td>table data</td>
+                    <td>table data</td>
+                </tr>
+                <tr>
+                    <td>table data</td>
+                    <td>table data</td>
+                </tr>
+                <tr>
+                    <td>table data</td>
+                    <td>table data</td>
+                </tr>
+                <tr>
+                    <td>table data</td>
+                    <td>table data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>A sub heading which is not as important as the second, but should be used with consideration</h3>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+            ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <blockquote>
+            <p>“Ooh - a blockquote! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie
+                gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.”
+            </p>
+        </blockquote>
+        <h4>A sub heading which is not as important as the second, but should be used with consideration</h4>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+            ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <h5>A sub heading which is not as important as the second, but should be used with consideration</h5>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+            ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <h6>This heading plays a relatively small bit part role, if you use it at all</h6>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </div>
+</div>
+  <div class="relative">
+  <div
+    class="absolute inset-0 w-full bg-brand-600 bg-cover bg-center bg-no-repeat object-cover mix-blend-multiply"
+    style="background-image: url(/assets/img/bg-cta.png)"
+  ></div>
+  <div class="container relative z-10 py-20 md:py-28">
+    <div class="mr-auto w-full md:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3">
+      <h3
+        class="font-header text-4xl uppercase text-white md:text-5xl lg:text-6xl"
+      >
+        Don't miss our weekly episodes!
+      </h3>
+      <p class="mt-6 font-body text-white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc
+        odio, dapibus eu tortor id, dignissim dictum massa. Donec ac semper
+        nulla.
+      </p>
+      <form class="group mt-6 flex flex-col md:flex-row">
+        <input
+          type="email"
+          id="email"
+          placeholder="EMAIL"
+          class="rounded-full border border-white bg-transparent px-6 py-3 font-header text-white placeholder-white focus:border-primary focus:ring-primary md:w-2/3"
+        />
+        <button
+          class="mt-4 rounded-full border border-transparent bg-primary px-8 py-3 font-header uppercase text-brand-400 transition duration-300 focus:outline-none group-hover:border-brand-500 group-hover:bg-white md:mt-0 md:ml-4 md:w-1/3"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+ <div
+  class="relative border-t-10 border-b-4 border-t-brand-300 border-b-primary bg-dark"
+>
+  <div class="absolute top-0 left-0 md:top-32 xl:top-10 xl:-left-28 2xl:left-0">
+    <img src="/assets/img/footer-shape-02.svg" alt="" />
+  </div>
+  <div class="absolute bottom-0 right-0 md:top-32 xl:top-10">
+    <img src="/assets/img/footer-shape-01.svg" alt="" />
+  </div>
+  <div class="container flex flex-wrap items-center justify-between py-14">
+    <div class="w-full md:w-3/5 xl:w-1/4 2xl:w-1/5">
+      <a href="/">
+        <img src="/assets/img/logo-podcast.svg" alt="logo" />
+      </a>
+      <p class="mt-7 block font-body font-bold text-white">
+        Consectetur adipiscing
+      </p>
+      <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus
+        lacus eget tortor porta placerat.
+      </p>
+    </div>
+    <div class="mt-10 w-full md:mt-0 md:w-2/5 xl:w-1/5">
+      <h4 class="font-body font-bold text-primary">Information</h4>
+      <ul class="mt-5 grid grid-cols-2">
+        <li>
+          <a href="/" class="font-header uppercase text-white">Home</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Blog</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white"
+            >Podcast Episode</a
+          >
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Blog Post</a>
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white"
+            >Podcast Single</a
+          >
+        </li>
+        <li>
+          <a href="/" class="font-header uppercase text-white">Single Page</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-10 w-full md:mt-12 md:w-3/5 xl:mt-0 xl:w-1/4">
+      <a href="/" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bxs-location-plus text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          New York, 12 Jimbaran, 0034
+        </span>
+      </a>
+      <a href="tel:(+62) 112 3312" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bxs-phone-call text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          (+62) 112 3312
+        </span>
+      </a>
+      <a href="mailto:podcast@infopodcast.com" class="mb-2 flex items-center">
+        <span>
+          <i class="bx bx-mail-send text-3xl text-brand-200"></i>
+        </span>
+        <span class="block pl-4 font-body tracking-wide text-white">
+          podcast@infopodcast.com
+        </span>
+      </a>
+    </div>
+    <div class="mt-10 w-full md:mt-12 md:w-2/5 xl:mt-0 xl:w-1/6">
+      <span class="font-body font-bold text-white">Follow us</span>
+      <div class="flex pt-4">
+        <a href="/">
+          <i class="bx bxl-spotify text-xl text-white hover:text-primary"></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-soundcloud pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-instagram pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+        <a href="/">
+          <i
+            class="bx bxl-youtube pl-2 text-xl text-white hover:text-primary"
+          ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+
+      <!-- Alpine -->
+      <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      ></script>
+    </main>
+  </body>
+</html>
